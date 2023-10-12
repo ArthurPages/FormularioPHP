@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Título del formulario */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+    margin: 10px 0;
+    padding: 0 20px; /* Agrega un padding a la izquierda y a la derecha */
+    text-align: left;
+    box-sizing: border-box; /* Controla el tamaño de los elementos de entrada */
+}
+/* Etiquetas de los campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Campos de entrada de texto */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Controla el tamaño de los elementos de entrada */
+}
+
+/* Campo de entrada de texto multilínea */
+textarea {
+    height: 100px;
+    resize: vertical; /* Permite la redimensión vertical del textarea */
+}
+
+/* Estilos para el botón de enviar */
+.button-container {
+    text-align: center;
+}
+
+/* Botón de enviar */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la información de contacto */
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Información de contacto */
+.info {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Estilos para las alertas */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilos para la alerta de error */
+.alert.danger {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Estilos para la alerta de éxito */
+.alert.success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Estilos para el ícono de emoji en las alertas */
+.alert span::before {
+    content: attr(data-emoji); /* Utiliza el atributo data-emoji para el emoji */
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 24px;
+}
